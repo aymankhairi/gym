@@ -11439,7 +11439,8 @@ pre {
   .header {
     background-image: url(../imgs/header.jpeg); ;
     background-attachment: scroll; /* Change to scroll on mobile */
-    background-size: cover; /* Adjust size for better fit */
+    background-size: contain; /* Adjust size for better fit */
+    background-position: center; /* Center the image within the header */
   }
 }
 .header .overlay {
