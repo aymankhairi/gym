@@ -11437,8 +11437,9 @@ pre {
 
 @media (max-width: 768px) {
   .header {
+    background-image: url(../imgs/header.jpeg); ;
     background-attachment: scroll; /* Change to scroll on mobile */
-    background-size: contain; /* Adjust size for better fit */
+    background-size: cover; /* Adjust size for better fit */
   }
 }
 .header .overlay {
