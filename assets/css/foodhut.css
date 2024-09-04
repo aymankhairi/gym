@@ -11418,17 +11418,29 @@ pre {
   visibility: visible;
   bottom: 50%;
 }
-
+@media (max-width: 768px) {
+  .has-bg-overlay1:before {
+    background-image: url(../imgs/client5.jpeg); /* Use a mobile-optimized image */
+    background-attachment: scroll;
+    background-size: cover; /* Or 'contain', depending on the image and design */
+  }
+}
 .header {
   height: 100vh;
   padding-top: 10%;
   max-height: 900px;
-  background: url(../imgs/header.jpeg) no-repeat center fixed;
+  background: url(../imgs/header.jpeg) no-repeat center;
   opacity: 0.7;
   background-size: cover;
   min-height: 650px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    background-attachment: scroll; /* Change to scroll on mobile */
+    background-size: contain; /* Adjust size for better fit */
+  }
+}
 .header .overlay {
   height: 100%;
   opacity: 2;
@@ -11577,7 +11589,13 @@ pre {
   background: #343a40;
   z-index: -2;
 }
-
+@media (max-width: 768px) {
+  .has-bg-overlay1:before {
+    background-image: url(../imgs/client5.jpeg); /* Use a mobile-optimized image */
+    background-attachment: scroll;
+    background-size: cover; /* Or 'contain', depending on the image and design */
+  }
+}
 .has-bg-overlay13 {
   position: relative;
 }
